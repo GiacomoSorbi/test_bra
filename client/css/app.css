@@ -43,8 +43,13 @@ section#flux-cart
 
 .flux-product img
 {
-    width: 100px;
+    width: 200px;
+    border: 2px solid #ddd;
+}
 
+.thumb
+{
+    width: 80px;
     border: 2px solid #ddd;
 }
 

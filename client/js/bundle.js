@@ -153,6 +153,7 @@ var FluxCart = React.createClass({displayName: 'FluxCart',
                   React.createElement("h1", {className: "name"}, products[product].name), 
                   React.createElement("p", {className: "type"}, products[product].type, " x ", products[product].quantity), 
                   React.createElement("p", {className: "price"}, "$", (products[product].price * products[product].quantity).toFixed(2)), 
+                  React.createElement("img", {className: "thumb"}, products[product].image), 
                   React.createElement("button", {type: "button", className: "remove-item", onClick: self.removeFromCart.bind(self, product)}, "Remove")
                 )
               )
@@ -238,7 +239,8 @@ var FluxProduct = React.createClass({displayName: 'FluxProduct',
     var update = {
       name: this.props.product.name,
       type: this.props.selected.type,
-      price: this.props.selected.price
+      price: this.props.selected.price,
+      price: this.props.selected.image
     }
     FluxCartActions.addToCart(sku, update);
     FluxCartActions.updateCartVisible(true);
@@ -261,6 +263,7 @@ var FluxProduct = React.createClass({displayName: 'FluxProduct',
           React.createElement("h1", {className: "name"}, this.props.product.name), 
           React.createElement("p", {className: "description"}, this.props.product.description), 
           React.createElement("p", {className: "price"}, "Price: $", this.props.selected.price), 
+          React.createElement("img", {className: "thumb", src: 'img/' + this.props.selected.image}), 
           React.createElement("select", {onChange: this.selectVariant}, 
             this.props.product.variants.map(function(variant, index){
               return (
