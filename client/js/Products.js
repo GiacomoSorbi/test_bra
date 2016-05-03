@@ -12,7 +12,6 @@ module.exports = {
             price: 29,
             image: bra1.jpg,
             inventory: 10
-
           },
           {
             sku: 'LN336',
@@ -53,5 +52,4 @@ module.exports = {
       }
     ]));
   }
-
 };
