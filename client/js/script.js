@@ -1,4 +1,4 @@
-var React = require('react');
+var React = require('React');
 var ProductData = require('./js/Products');
 var CartAPI = require('./utils/CartAPI')
 var FluxCartApp = require('./components/FluxCartApp.react');

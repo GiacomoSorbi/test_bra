@@ -10,8 +10,8 @@ body
     margin: 0;
     padding: 0;
 
-    color: #2c3e50;
-    background: #e67e22;
+    color: #666;
+    background: #f6bebe;
 }
 
 body *
@@ -37,13 +37,13 @@ section#flux-cart
     margin: 20px auto;
     padding: 20px;
 
-    border: 5px solid #2c3e50;
+    border: 5px solid #666;
     background: white;
 }
 
 .flux-product img
 {
-    width: 50%;
+    width: 100px;
 
     border: 2px solid #ddd;
 }
@@ -64,7 +64,7 @@ section#flux-cart
 
 h1
 {
-    color: #2c3e50;
+    color: #844;
 }
 
 select
